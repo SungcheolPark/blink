@@ -10,11 +10,13 @@ Blink::Blink(int pin)
 void Blink::on(int time)
 {
   digitalWrite(_pin, HIGH);
-  delay(time);
+  _time = time;
+  delay(_time);
 }
  
 void Blink::off(int time)
 {
   digitalWrite(_pin, LOW);
-  delay(time);
+  _time = time;
+  delay(_time);
 }
