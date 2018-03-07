@@ -11,6 +11,7 @@ class Blink
     void off(int time);
   private:
     int _pin;
+    int _time;
 };
 
 #endif
