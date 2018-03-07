@@ -1,3 +1,8 @@
+#ifndef Blink_h
+#define Blink_h
+ 
+#include "Arduino.h"
+
 class Blink
 {
   public:
@@ -7,3 +12,5 @@ class Blink
   private:
     int _pin;
 };
+
+#endif
