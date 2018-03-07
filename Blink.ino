@@ -5,7 +5,7 @@ Blink blink(D4);
 void setup() 
 {
   Serial.begin(115200);
-  Serial.println(“\nBlinkVersion 1.0 Park SungChul”);
+  Serial.println("\nBlinkVersion 1.0 Park SungChul");
 }
 
 void loop()
