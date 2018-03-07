@@ -1,15 +1,18 @@
-#include <Blink.h>
-
-Blink blink(D4);
-
-void setup() 
+#include "Arduino.h"
+#include "Blink.h"
+ 
+Blink::Blink(int pin)
 {
-  Serial.begin(115200);
-  Serial.println(“\nBlinkVersion 1.0 Your_First_NameYour_Last_Name”);
+  pinMode(pin, OUTPUT);
+  _pin = pin;
 }
-
-void loop()
+ 
+void Blink::on()
 {
-  blink.on(500);
-  blink.off(300);
+  digitalWrite(_pin, HIGH);
+}
+ 
+void Blink::off()
+{
+  digitalWrite(_pin, LOW);
 }
